@@ -1,0 +1,65 @@
+howto git:
+cd /project
+git init
+git add -A
+git config --global user.name kamzar1
+git config --global user.email kamzar@163.com
+git remote add origin https://github.com/1-com/docs.git
+git commit -m "Initial commit"
+git push origin master
+
+https://github.com/1-com/docs.git
+
+install python / pip for windows / linux python-3 py-3 pip
+pip install mkdocs
+pip install mkdocs-material
+pip install mkdocs-bootstrap
+pip install mkdocs-bootswatch
+pip install mkdocs-minify-plugin
+Commands
+mkdocs new [dir-name] - Create a new project.
+mkdocs serve - Start the live-reloading docs server.
+mkdocs build - Build the documentation site.
+mkdocs -h - Print help message and exit.
+
+mkdocs new doc1
+cd doc1
+mkdocs serve
+
+C:\Users\KAMAL\py\doc1>mkdocs serve -h
+Usage: mkdocs serve [OPTIONS]
+
+  Run the builtin development server
+
+Options:
+  -a, --dev-addr <IP:PORT>        IP address and port to serve documentation
+                                  locally (default: localhost:8000)
+  --livereload                    Enable the live reloading in the development
+                                  server (this is the default)
+  --no-livereload                 Disable the live reloading in the
+                                  development server.
+  --dirtyreload                   Enable the live reloading in the development
+                                  server, but only re-build files that have
+                                  changed
+  --watch-theme                   Include the theme in list of files to watch
+                                  for live reloading. Ignored when live reload
+                                  is not used.
+  -w, --watch PATH                A directory or file to watch for live
+                                  reloading. Can be supplied multiple times.
+  -f, --config-file FILENAME      Provide a specific MkDocs config
+  -s, --strict                    Enable strict mode. This will cause MkDocs
+                                  to abort the build on any warnings.
+  -t, --theme [material|mkdocs|readthedocs]
+                                  The theme to use when building your
+                                  documentation.
+  --use-directory-urls / --no-directory-urls
+                                  Use directory URLs when building pages (the
+                                  default).
+  -q, --quiet                     Silence warnings
+  -v, --verbose                   Enable verbose output
+  -h, --help                      Show this message and exit.
+
+C:\Users\KAMAL\py\doc1>mkdocs serve -a 127.0.0.1:8001 --no-livereload
+
+
+C:\Users\KAMAL\py\doc1>mkdocs serve -a 127.0.0.1:8001 --no-livereload -t material
